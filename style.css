@@ -1,0 +1,423 @@
+
+
+/* body */
+
+body ,html {
+    padding: 0;
+    margin: 0;
+    background: white;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header {
+    background: #1f2937;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-right: 16px;
+}
+
+
+.nav ul li {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    
+}
+
+.nav ul li a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: white; 
+}
+
+/* home */
+
+#home {
+    padding: 80px 40px;
+    background-color: #1f2937;
+    color: white;
+}
+
+
+.home h1 {
+    font-size: 48px;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+}
+
+.home h3 {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.logo {
+    color: #f9faf8;
+    font-size: 24px;
+
+}
+
+
+
+.home-img {
+  flex: 1;
+  background-color: #1f2937;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.home-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+    flex: 1;
+    max-width: 300px;
+}
+
+.home button {
+    background-color: #3382f6;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.home button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* gallery */
+
+.gallery-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 40px
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+} 
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3 ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+    padding: 0 10px;
+}
+
+
+/* Itinerary */
+
+#itinerary {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#itinerary h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+
+#itinerary h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+.itinerary-row {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+.icon {
+  width: 32px;
+  text-align: right;
+}
+
+.text {
+  text-align: left;
+}
+
+.itinerary {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;    
+    max-width: fit-content;
+    
+}
+
+/* Packages */
+
+.h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+
+.packages {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.packages ul li {
+    list-style: none;
+}
+
+.package-card {
+    background-color: #1f2937;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0,3 ease;
+    width: 300px;
+}
+
+.package-card:hover {
+    transform: translateY(-0.5rem);
+}
+
+.packages h1 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem;
+}
+
+.packages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.badge {
+    background-color: #3382f6;
+}
+
+
+/* Reviews */
+
+
+#reviews {
+    text-align: center;
+    background-color: #e5e7eb;
+}
+
+#reviews h1 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 40px
+}
+
+#reviews h2 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.reviews-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: center;
+    gap: 100px;
+    padding: 0 20px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 30px;
+    padding-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    transition: transform 0.3 ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-0.5rem)
+}
+
+.testimonial-card img {
+    height: 100px;
+    width: 100px;
+}
+
+
+/*  Booking Section */
+
+
+#book-now {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+#book-now h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#book-now h3 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 16px;
+
+}
+
+
+input {
+    padding: 12px;
+    width: 500px;
+}
+
+button {
+    background-color: #3382f6;
+    color: white;
+    padding: 16px;
+    border-radius: 24px;
+}
+
+.booking {
+    background-color: green;
+    max-width: fit-content;
+
+}
+
+
+/* footer */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 40px;
+}
+
+.footer ul li{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    padding: 16px;
+}
+
+ a {
+    text-decoration: none;
+    color: white;
+    gap: 24px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+}
